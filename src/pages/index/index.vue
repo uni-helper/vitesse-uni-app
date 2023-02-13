@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const title = ref('Hello')
+import { ref } from "vue";
+const title = ref("Hello");
 </script>
 
 <style>
@@ -39,3 +39,7 @@ const title = ref('Hello')
   color: #8f8f94;
 }
 </style>
+
+<route type="home" lang="json">
+{}
+</route>
