@@ -21,3 +21,4 @@ dist
 *.sw?
 
 manifest.json
+pages.json
