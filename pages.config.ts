@@ -1,4 +1,3 @@
-// pages.config.ts
 import { defineUniPages } from "@uni-helper/vite-plugin-uni-pages";
 
 export default defineUniPages({
@@ -12,5 +11,11 @@ export default defineUniPages({
     navigationBarTextStyle: "@navTxtStyle",
     navigationBarTitleText: "Vitess-Uni",
     navigationStyle: "custom",
+  },
+  tabBar: {
+    backgroundColor: "@tabBgColor",
+    borderStyle: "@tabBorderStyle",
+    color: "@tabFontColor",
+    selectedColor: "@tabSelectedColor",
   },
 });

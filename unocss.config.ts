@@ -13,7 +13,7 @@ import {
   transformerAttributify,
 } from "unocss-applet";
 
-const isApplet = process.env?.UNI_PLATFORM?.startsWith("mp");
+const isApplet = process.env?.UNI_PLATFORM?.startsWith("mp") ?? false;
 
 export default defineConfig({
   presets: [
