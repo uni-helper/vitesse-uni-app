@@ -1,16 +1,16 @@
-import { defineManifestConfig } from "@uni-helper/vite-plugin-uni-manifest";
+import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 
 export default defineManifestConfig({
-  name: "vitesse-uni-app",
-  appid: "",
-  description: "",
-  versionName: "1.0.0",
-  versionCode: "100",
-  transformPx: false,
+  'name': 'vitesse-uni-app',
+  'appid': '',
+  'description': '',
+  'versionName': '1.0.0',
+  'versionCode': '100',
+  'transformPx': false,
   /* 5+App特有相关 */
-  "app-plus": {
+  'app-plus': {
     usingComponents: true,
-    nvueStyleCompiler: "uni-app",
+    nvueStyleCompiler: 'uni-app',
     compilerVersion: 3,
     splashscreen: {
       alwaysShowBeforeRender: true,
@@ -49,32 +49,32 @@ export default defineManifestConfig({
     },
   },
   /* 快应用特有相关 */
-  quickapp: {},
+  'quickapp': {},
   /* 小程序特有相关 */
-  "mp-weixin": {
-    appid: "",
+  'mp-weixin': {
+    appid: '',
     setting: {
       urlCheck: false,
     },
     usingComponents: true,
     darkmode: true,
-    themeLocation: "theme.json",
+    themeLocation: 'theme.json',
   },
-  "mp-alipay": {
+  'mp-alipay': {
     usingComponents: true,
   },
-  "mp-baidu": {
+  'mp-baidu': {
     usingComponents: true,
   },
-  "mp-toutiao": {
+  'mp-toutiao': {
     usingComponents: true,
   },
-  h5: {
+  'h5': {
     darkmode: true,
-    themeLocation: "theme.json",
+    themeLocation: 'theme.json',
   },
-  uniStatistics: {
+  'uniStatistics': {
     enable: false,
   },
-  vueVersion: "3",
-});
+  'vueVersion': '3',
+})

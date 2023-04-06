@@ -7,7 +7,9 @@
       hover-class="drop-shadow-md drop-shadow-color-green5"
     >
       <image w-18 h-18 inline-block src="/static/logo.svg" />
-      <text text-green5 mt--2>uni-helper</text>
+      <text text-green5 mt--2>
+        uni-helper
+      </text>
     </view>
     <view
       text="3xl gray4"
@@ -19,7 +21,9 @@
     />
     <view flex flex-col hover-class="drop-shadow-md drop-shadow-color-purple5">
       <image w-18 h-18 inline-block src="/static/vite.png" />
-      <text text-purple5 mt--2>Vite</text>
+      <text text-purple5 mt--2>
+        Vite
+      </text>
     </view>
   </view>
 </template>

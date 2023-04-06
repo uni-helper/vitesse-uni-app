@@ -36,6 +36,8 @@ Vitesse for uni-app
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🦾 TypeScript, 当然
+<!-- eslint -->
+- [ESLint](https://eslint.org/) - 保证代码质量
 
 ## 现在可以试试!
 
@@ -48,7 +50,7 @@ Vitesse for uni-app
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx giget @uni-helper/vitesse-uni-app my-vitesse-app
+npx degit uni-helper/vitesse-uni-app my-vitesse-app
 cd my-vitesse-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```

@@ -1,9 +1,9 @@
+<script setup lang="ts"></script>
+
 <template>
   <Logos />
   <InputEntry />
 </template>
-
-<script setup lang="ts"></script>
 
 <style></style>
 
