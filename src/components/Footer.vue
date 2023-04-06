@@ -1,6 +1,13 @@
 <script lang="ts" setup>
 function handleClickGithub() {
-  window.open("https://github.com/uni-helper/vitesse-uni-app");
+  if (window?.open) {
+    window.open("https://github.com/uni-helper/vitesse-uni-app");
+  } else {
+    uni.showToast({
+      icon: "none",
+      title: "请使用浏览器打开",
+    });
+  }
 }
 </script>
 
