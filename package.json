@@ -1,7 +1,9 @@
 {
   "name": "vitesse-uni-app",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
+    "dev": "uni",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -18,6 +20,7 @@
     "dev:quickapp-webview": "uni -p quickapp-webview",
     "dev:quickapp-webview-huawei": "uni -p quickapp-webview-huawei",
     "dev:quickapp-webview-union": "uni -p quickapp-webview-union",
+    "build": "uni build",
     "build:app": "uni build -p app",
     "build:app-android": "uni build -p app-android",
     "build:app-ios": "uni build -p app-ios",
