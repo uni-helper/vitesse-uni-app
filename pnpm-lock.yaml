@@ -88,8 +88,8 @@ devDependencies:
     specifier: ^0.1.2
     version: 0.1.2
   '@uni-helper/vite-plugin-uni-pages':
-    specifier: ^0.1.5
-    version: 0.1.5
+    specifier: ^0.1.6
+    version: 0.1.6
   '@unocss/eslint-config':
     specifier: ^0.50.6
     version: 0.50.6(eslint@8.37.0)(typescript@5.0.3)
@@ -3506,8 +3506,8 @@ packages:
       unconfig: 0.3.7
     dev: true
 
-  /@uni-helper/vite-plugin-uni-pages@0.1.5:
-    resolution: {integrity: sha512-pXkUKVPED2giitg6LGjjVwguh6svPxN2FruqqCnqF1HIQaCdpOFs8nx9sjgN08Y0mas7ED3PMe9AvcLVav5Guw==}
+  /@uni-helper/vite-plugin-uni-pages@0.1.6:
+    resolution: {integrity: sha512-MJbd+yiJlWHXyzQSrb8JySNNbO0Pm/QH2Q/zaEnWIEgrApDr+qr/FTL+apVDA8iOPdJeydEsEgM0wYZydQNuPg==}
     dependencies:
       '@vue/compiler-sfc': 3.2.47
       chokidar: 3.5.3
