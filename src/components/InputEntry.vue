@@ -27,22 +27,16 @@ function go() {
         placeholder="What's your name?"
         type="text"
         autocomplete="off"
-        w-full
-        mr-0
+
+        mr-0 w-full
       >
     </view>
     <view>
       <button
         :disabled="!name"
-        rounded
-        bg-teal-600
-        text-white
-        px-4
-        py-1
-        m-auto
-        text-sm
+
         m="t-3 auto"
-        w-120rpx
+        m-auto w-120rpx rounded bg-teal-600 px-4 py-1 text-sm text-white
         hover-calss="bg-teal-700"
         @click="go"
       >

@@ -13,7 +13,7 @@ function handleClickGithub() {
 </script>
 
 <template>
-  <view text="xl gray4" m-5 flex justify-center items-center gap-3>
+  <view text="xl gray4" m-5 flex items-center justify-center gap-3>
     <navigator url="/pages/index" open-type="redirect">
       <view i-carbon-campsite />
     </navigator>

@@ -1,8 +1,8 @@
 <template>
-  <view class="py-20 px-10 text-center">
+  <view class="px-10 py-20 text-center">
     <slot />
     <Footer />
-    <view class="mt-5 mx-auto text-center opacity-25 text-sm">
+    <view class="mx-auto mt-5 text-center text-sm opacity-25">
       [Home Layout]
     </view>
   </view>
