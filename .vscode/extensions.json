@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "antfu.vite",
+    "antfu.iconify",
+    "antfu.unocss",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "editorConfig.editorConfig",
+    "uni-helper.uni-helper-vscode"
+  ]
+}

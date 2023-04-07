@@ -1,3 +1,3 @@
 <script setup lang="ts">
-onLaunch(() => {});
+onLaunch(() => {})
 </script>

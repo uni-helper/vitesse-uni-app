@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { count, inc, dec } = useCount();
+const { count, inc, dec } = useCount()
 </script>
 
 <template>

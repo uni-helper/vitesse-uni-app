@@ -4,16 +4,16 @@ import {
   presetIcons,
   transformerDirectives,
   transformerVariantGroup,
-} from "unocss";
+} from 'unocss'
 
 import {
   presetApplet,
   presetRemToRpx,
   transformerApplet,
   transformerAttributify,
-} from "unocss-applet";
+} from 'unocss-applet'
 
-const isApplet = process.env?.UNI_PLATFORM?.startsWith("mp") ?? false;
+const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp') ?? false
 
 export default defineConfig({
   presets: [
@@ -21,8 +21,8 @@ export default defineConfig({
       scale: 1.2,
       warn: true,
       extraProperties: {
-        display: "inline-block",
-        "vertical-align": "middle",
+        'display': 'inline-block',
+        'vertical-align': 'middle',
       },
     }),
     presetApplet({ enable: isApplet }),
@@ -36,4 +36,4 @@ export default defineConfig({
     transformerAttributify({ enable: isApplet }),
     transformerApplet({ enable: isApplet }),
   ],
-});
+})
