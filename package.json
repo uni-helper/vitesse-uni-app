@@ -76,6 +76,7 @@
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.0",
     "@uni-helper/vite-plugin-uni-manifest": "^0.1.2",
     "@uni-helper/vite-plugin-uni-pages": "^0.1.6",
+    "@uni-helper/volar-plugin-uni-pages": "^0.1.7",
     "@unocss/eslint-config": "^0.50.6",
     "@vue/tsconfig": "^0.1.3",
     "eslint": "^8.37.0",
