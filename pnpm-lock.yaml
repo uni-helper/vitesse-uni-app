@@ -123,6 +123,9 @@ devDependencies:
   vite:
     specifier: 4.0.3
     version: 4.0.3(@types/node@18.15.11)(terser@5.16.3)
+  vite-plugin-qrcode:
+    specifier: ^0.2.1
+    version: 0.2.1(vite@4.0.3)
   vue-tsc:
     specifier: ^1.2.0
     version: 1.2.0(typescript@5.0.3)
@@ -9194,6 +9197,16 @@ packages:
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+    dev: true
+
+  /vite-plugin-qrcode@0.2.1(vite@4.0.3):
+    resolution: {integrity: sha512-REEIXb0cs4N7GdZoDS56RqwUOxZwXaA2KqwODtr4mScfEVLk5BuqBxWy849yo3LoGP9dH7AdAauAlgU2eqsgdw==}
+    engines: {node: ^14.13.1 || ^16.0.0 || >=18}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0
+    dependencies:
+      qrcode-terminal: 0.12.0
+      vite: 4.0.3(@types/node@18.15.11)(terser@5.16.3)
     dev: true
 
   /vite@4.0.3(@types/node@18.15.11)(terser@5.16.3):

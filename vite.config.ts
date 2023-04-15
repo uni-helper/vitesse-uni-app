@@ -6,6 +6,7 @@ import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
+import { qrcode } from 'vite-plugin-qrcode'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,5 +33,6 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     UnoCSS(),
+    qrcode(),
   ],
 })
