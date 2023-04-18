@@ -27,7 +27,7 @@ export default defineConfig({
     }),
     presetApplet({ enable: isApplet }),
     presetAttributify(),
-    presetRemToRpx({ enable: isApplet }),
+    presetRemToRpx(),
   ],
   transformers: [
     transformerDirectives(),
