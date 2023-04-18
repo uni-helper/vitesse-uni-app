@@ -1,20 +1,12 @@
 <p align="center">
-<img src="./.github/images/preview.png" width="300"/>
+  <img src="./.github/images/preview.png" width="300"/>
 </p>
 
 <h2 align="center">
 Vitesse for uni-app
-</h2><br>
-
-<pre align="center">
-🧪 Working in Progress
-</pre>
-
+</h2>
 <p align="center">
-<br>
-<a href="https://vitesse-uni-app.netlify.app/">🖥 Online Preview</a>
-<br><br>
-<a href="https://stackblitz.com/github/uni-helper/vitesse-uni-app"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
+  <a href="https://vitesse-uni-app.netlify.app/">📱 在线预览</a>
 </p>
 
 ## 特性
@@ -35,25 +27,31 @@ Vitesse for uni-app
 
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
-- 🦾 TypeScript, 当然
-<!-- eslint -->
-- [ESLint](https://eslint.org/) - 保证代码质量
+- 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) - 保证代码质量
 
-## 现在可以试试!
+## 快速开始
 
-### GitHub 模板
+vitesse-uni-app 支持多种开始方式
 
-[使用这个模板创建仓库](https://github.com/uni-helper/vitesse-uni-app/generate).
-
-### 克隆到本地
-
-如果您更喜欢使用更干净的 git 历史记录手动执行此操作
+### 在本地创建
 
 ```bash
 npx degit uni-helper/vitesse-uni-app my-vitesse-app
 cd my-vitesse-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
+
+### GitHub 模板
+
+[使用这个模板](https://github.com/uni-helper/vitesse-uni-app/generate)
+
+### StackBlitz
+
+<a href="https://stackblitz.com/github/uni-helper/vitesse-uni-app">
+  <img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt="open_in_stackblitz">
+</a>
+
+###
 
 ## 使用
 
