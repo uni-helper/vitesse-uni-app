@@ -2,7 +2,7 @@
   "name": "vitesse-uni-app",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.3.0",
+  "packageManager": "pnpm@8.3.1",
   "license": "MIT",
   "scripts": {
     "dev": "uni",
@@ -78,7 +78,7 @@
     "@uni-helper/vite-plugin-uni-pages": "^0.1.8",
     "@uni-helper/volar-plugin-uni-pages": "^0.1.8",
     "@unocss/eslint-config": "^0.51.4",
-    "@vue/tsconfig": "^0.1.3",
+    "@vue/tsconfig": "^0.3.0",
     "eslint": "^8.38.0",
     "lint-staged": "^13.2.1",
     "simple-git-hooks": "^2.8.1",
@@ -86,7 +86,7 @@
     "unocss": "^0.51.4",
     "unocss-applet": "^0.4.3",
     "unplugin-auto-import": "^0.15.3",
-    "vite": "4.2.2",
+    "vite": "4.3.1",
     "vue-tsc": "^1.2.0"
   },
   "simple-git-hooks": {
