@@ -58,7 +58,7 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-alpha-3071320230417001",
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3071320230417001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3071320230417001",
-    "@vueuse/core": "^10.0.2",
+    "@vueuse/core": "^9.13.0",
     "vue": "^3.2.47",
     "vue-i18n": "^9.2.2"
   },
