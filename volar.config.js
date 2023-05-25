@@ -1,7 +1,7 @@
-const volarPluginUniPages = require('@uni-helper/volar-plugin-uni-pages')
+const volarServiceUniPages = require('@uni-helper/volar-service-uni-pages')
 
 module.exports = {
-  plugins: [
-    volarPluginUniPages(),
+  services: [
+    volarServiceUniPages(),
   ],
 }
