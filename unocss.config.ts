@@ -1,19 +1,36 @@
+import type {
+  Preset,
+  SourceCodeTransformer,
+} from 'unocss'
+
 import {
   defineConfig,
   presetAttributify,
   presetIcons,
+  presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
 
-import {
-  presetApplet,
-  presetRemToRpx,
-  transformerApplet,
-  transformerAttributify,
-} from 'unocss-applet'
+import { presetApplet, presetRemRpx, transformerApplet, transformerAttributify } from 'unocss-applet'
 
-const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp') ?? false
+import { isH5, isMp } from '@uni-helper/uni-env'
+
+const presets: Preset[] = []
+const transformers: SourceCodeTransformer[] = []
+const darkMode = isH5 ? 'class' : 'media'
+
+if (isMp) {
+  presets.push(presetApplet({ dark: darkMode }))
+  presets.push(presetRemRpx())
+  transformers.push(transformerAttributify({ ignoreAttributes: ['block', 'fixed'] }))
+  transformers.push(transformerApplet())
+}
+else {
+  presets.push(presetUno({ dark: darkMode }))
+  presets.push(presetAttributify())
+  presets.push(presetRemRpx({ mode: 'rpx2rem' }))
+}
 
 export default defineConfig({
   presets: [
@@ -25,15 +42,14 @@ export default defineConfig({
         'vertical-align': 'middle',
       },
     }),
-    presetApplet({ enable: isApplet }),
-    presetAttributify(),
-    presetRemToRpx(),
+    ...presets,
   ],
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
-    // Don't change the following order
-    transformerAttributify({ enable: isApplet }),
-    transformerApplet({ enable: isApplet }),
+    ...transformers,
   ],
+  theme: {
+    preflightRoot: isMp ? ['page,::before,::after'] : undefined,
+  },
 })
