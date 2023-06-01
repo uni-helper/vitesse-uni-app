@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./.github/images/preview.png" width="300"/>
+  <img src="https://github.com/uni-helper/vitesse-uni-app/raw/main/.github/images/preview.png" width="300"/>
 </p>
 
 <h2 align="center">
@@ -38,7 +38,7 @@ vitesse-uni-app 支持多种开始方式
 ```bash
 npx degit uni-helper/vitesse-uni-app my-vitesse-app
 cd my-vitesse-app
-pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
+pnpm i # 如果你没有 pnpm, 可以先运行: corepack enable
 ```
 
 ### GitHub 模板
@@ -51,8 +51,28 @@ pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
   <img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt="open_in_stackblitz">
 </a>
 
-###
+## 清单
+
+- [ ] 在 LICENSE 中改变作者名或直接删除
+- [ ] 在 manifest.config.ts 中改变标题
+- [ ] 在 index.html 目录下改变 favicon
+- [ ] 移除 .github 文件夹
+- [ ] 整理 README 并删除演示页面和组件
+- [ ] 享受！
 
 ## 使用
 
 参考 uni-app 官方文档： [运行、发布 uni-app](https://uniapp.dcloud.net.cn/quickstart-cli.html#%E8%BF%90%E8%A1%8C%E3%80%81%E5%8F%91%E5%B8%83uni-app)
+
+
+## 注意事项
+
+- Q: patches 文件夹是什么?
+  - A: 目前用于解决 windows 下 unocss 与 uniapp 一起使用时频繁崩溃的问题, 如果你不是 windows 用户, 可以直接删除 patches 文件夹, 并删除 package.json 中如下内容
+  ```diff
+  -  "pnpm": {
+  -    "patchedDependencies": {
+  -      "@unocss/vite@0.52.5": "patches/@unocss__vite@0.52.5.patch"
+  -    }
+  -  }
+  ```
