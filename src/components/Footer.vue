@@ -18,7 +18,7 @@ function handleClickGithub() {
       <view i-carbon-campsite />
     </navigator>
 
-    <view @click="handleClickGithub">
+    <view cursor-pointer @click="handleClickGithub">
       <view i-carbon:logo-github />
     </view>
   </view>
