@@ -6,6 +6,6 @@
   },
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "vite.config.*": "pages.config.*, manifest.config.*, unocss.config.*, volar.config.*, *.env, .env.*"
+    "vite.config.*": "pages.config.*, manifest.config.*, uno.config.*, volar.config.*, *.env, .env.*"
   }
 }
