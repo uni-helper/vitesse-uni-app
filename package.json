@@ -92,7 +92,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@unocss/vite@0.52.5": "patches/@unocss__vite@0.52.5.patch"
+      "@unocss/vite@0.52.5": "patches/@unocss__vite@0.53.1.patch"
     }
   },
   "simple-git-hooks": {
