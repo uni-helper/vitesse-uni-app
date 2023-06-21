@@ -78,13 +78,13 @@
     "@uni-helper/vite-plugin-uni-manifest": "^0.1.3",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.2",
     "@uni-helper/volar-service-uni-pages": "^0.2.2",
-    "@unocss/eslint-config": "^0.53.1",
+    "@unocss/eslint-config": "^0.52.5",
     "@vue/tsconfig": "^0.4.0",
     "eslint": "^8.43.0",
     "lint-staged": "^13.2.2",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.1.3",
-    "unocss": "^0.53.1",
+    "unocss": "^0.52.5",
     "unocss-applet": "^0.5.3",
     "unplugin-auto-import": "^0.16.4",
     "vite": "4.3.9",
@@ -92,7 +92,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@unocss/vite@0.52.5": "patches/@unocss__vite@0.53.1.patch"
+      "@unocss/vite@0.52.5": "patches/@unocss__vite@0.52.5.patch"
     }
   },
   "simple-git-hooks": {
