@@ -64,15 +64,41 @@ pnpm i # 如果你没有 pnpm, 可以先运行: corepack enable
 
 参考 uni-app 官方文档： [运行、发布 uni-app](https://uniapp.dcloud.net.cn/quickstart-cli.html#%E8%BF%90%E8%A1%8C%E3%80%81%E5%8F%91%E5%B8%83uni-app)
 
+### 目录结构
 
-## 注意事项
+- .github 可放心删除
+- .vscode 如果你不使用 VsCode 可放心删除
+- dist 使用 build 命令构建后的产物
+- node_modules 项目依赖，推荐使用 `pnpm` 作为包管理器
+- src 项目主要源代码
+  - components 组件目录
+  - composables 可组合函数
+  - layouts 布局
+  - pages 页面
+  - static 静态资源
+  - App.vue 应用
+  - auto-imports.d.ts 自动导入的 dts
+  - components.d.ts 自动导入组件的 dts
+  - env.d.ts vite、vue 环境 dts
+  - main.ts 入口文件
+  - shims.d.ts uni-app 对 vue 扩展的 dts
+  - theme.json 亮色/暗色主题配置
+  - uni.scss uni-app 常用 SCSS 变量
+- .editorconfig Editor Config 配置
+- .eslintignore ESLint 忽略配置
+- .eslintrc ESLint 配置
+- .gitignore Git 忽略配置
+- .npmrc npm 配置
+- index.html
+- LICENSE 开源协议，可放心删除
+- packages.json 应用的依赖和脚本, [了解更多](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)
+- pnpm-lock.yaml pnpm 锁文件
+- README.md 本文件
+- renovate.json 可放心删除
+- tsconfig.json TypeScript 配置文件
+- vite.config.ts Vite 配置文件
+- manifest.config.ts 接管 manifest
+- pages.config.ts 接管 pages
+- uno.config.ts UNOCSS 配置文件
+- volar.config.ts Volar 配置文件
 
-- Q: patches 文件夹是什么?
-  - A: 目前用于解决 windows 下 unocss 与 uniapp 一起使用时频繁崩溃的问题, 如果你不是 windows 用户, 可以直接删除 patches 文件夹, 并删除 package.json 中如下内容
-  ```diff
-  -  "pnpm": {
-  -    "patchedDependencies": {
-  -      "@unocss/vite@0.52.5": "patches/@unocss__vite@0.52.5.patch"
-  -    }
-  -  }
-  ```
