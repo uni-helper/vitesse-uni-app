@@ -13,7 +13,9 @@ export default defineConfig({
     // https://github.com/uni-helper/vite-plugin-uni-manifest
     UniHelperManifest(),
     // https://github.com/uni-helper/vite-plugin-uni-pages
-    UniHelperPages(),
+    UniHelperPages({
+      dts: 'src/uni-pages.d.ts',
+    }),
     // https://github.com/uni-helper/vite-plugin-uni-layouts
     UniHelperLayouts(),
     // https://github.com/uni-helper/vite-plugin-uni-components
