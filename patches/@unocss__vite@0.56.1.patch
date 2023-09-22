@@ -1,0 +1,46 @@
+diff --git a/dist/index.cjs b/dist/index.cjs
+index 44f299a69ca67ec061bc5ce1b4109270e48b7aa6..25022d1287d3469f18e446ac36bab83b92489d61 100644
+--- a/dist/index.cjs
++++ b/dist/index.cjs
+@@ -35,15 +35,15 @@ const VIRTUAL_ENTRY_ALIAS = [
+   /^(?:virtual:)?uno(?::(.+))?\.css(\?.*)?$/
+ ];
+ const LAYER_MARK_ALL = "__ALL__";
+-const RESOLVED_ID_WITH_QUERY_RE = /[\/\\]__uno(?:(_.*?))?\.css(\?.*)?$/;
+-const RESOLVED_ID_RE = /[\/\\]__uno(?:(_.*?))?\.css$/;
++const RESOLVED_ID_WITH_QUERY_RE = /__uno(?:(_.*?))?\.css(\?.*)?$/;
++const RESOLVED_ID_RE = /__uno(?:(_.*?))?\.css$/;
+ function resolveId(id) {
+   if (id.match(RESOLVED_ID_WITH_QUERY_RE))
+     return id;
+   for (const alias of VIRTUAL_ENTRY_ALIAS) {
+     const match = id.match(alias);
+     if (match) {
+-      return match[1] ? `/__uno_${match[1]}.css` : "/__uno.css";
++      return match[1] ? `__uno_${match[1]}.css` : "__uno.css";
+     }
+   }
+ }
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 247735a319181f62ef77cebd12ff2fd655d8082c..8f2f36887218b2683570059033f96126cdd3b038 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -20,15 +20,15 @@ const VIRTUAL_ENTRY_ALIAS = [
+   /^(?:virtual:)?uno(?::(.+))?\.css(\?.*)?$/
+ ];
+ const LAYER_MARK_ALL = "__ALL__";
+-const RESOLVED_ID_WITH_QUERY_RE = /[\/\\]__uno(?:(_.*?))?\.css(\?.*)?$/;
+-const RESOLVED_ID_RE = /[\/\\]__uno(?:(_.*?))?\.css$/;
++const RESOLVED_ID_WITH_QUERY_RE = /__uno(?:(_.*?))?\.css(\?.*)?$/;
++const RESOLVED_ID_RE = /__uno(?:(_.*?))?\.css$/;
+ function resolveId(id) {
+   if (id.match(RESOLVED_ID_WITH_QUERY_RE))
+     return id;
+   for (const alias of VIRTUAL_ENTRY_ALIAS) {
+     const match = id.match(alias);
+     if (match) {
+-      return match[1] ? `/__uno_${match[1]}.css` : "/__uno.css";
++      return match[1] ? `__uno_${match[1]}.css` : "__uno.css";
+     }
+   }
+ }
