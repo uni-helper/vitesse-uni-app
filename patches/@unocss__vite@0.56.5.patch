@@ -1,30 +1,46 @@
 diff --git a/dist/index.cjs b/dist/index.cjs
-index 9d45d971c34cf3805b2b37c6cd0db7b5842eee4b..2203722dd06154da83df8f90688587f68fa0212a 100644
+index 9d45d971c34cf3805b2b37c6cd0db7b5842eee4b..87838a594138027a5734e0fb2340e6a27fb5d47d 100644
 --- a/dist/index.cjs
 +++ b/dist/index.cjs
-@@ -35,8 +35,8 @@ const VIRTUAL_ENTRY_ALIAS = [
+@@ -35,15 +35,15 @@ const VIRTUAL_ENTRY_ALIAS = [
    /^(?:virtual:)?uno(?::(.+))?\.css(\?.*)?$/
  ];
  const LAYER_MARK_ALL = "__ALL__";
 -const RESOLVED_ID_WITH_QUERY_RE = /[\/\\]__uno(?:(_.*?))?\.css(\?.*)?$/;
 -const RESOLVED_ID_RE = /[\/\\]__uno(?:(_.*?))?\.css$/;
-+const RESOLVED_ID_WITH_QUERY_RE = /__uno(?:(_.*?))?\.css(\?.*)?$/;
-+const RESOLVED_ID_RE = /__uno(?:(_.*?))?\.css$/;
++const RESOLVED_ID_WITH_QUERY_RE = /[\/\\]?__uno(?:(_.*?))?\.css(\?.*)?$/;
++const RESOLVED_ID_RE = /[\/\\]?__uno(?:(_.*?))?\.css$/;
  function resolveId(id) {
    if (id.match(RESOLVED_ID_WITH_QUERY_RE))
      return id;
+   for (const alias of VIRTUAL_ENTRY_ALIAS) {
+     const match = id.match(alias);
+     if (match) {
+-      return match[1] ? `/__uno_${match[1]}.css` : "/__uno.css";
++      return match[1] ? `__uno_${match[1]}.css` : "__uno.css";
+     }
+   }
+ }
 diff --git a/dist/index.mjs b/dist/index.mjs
-index 9780cf2901dab372b703448bb8bd6813561204ec..0698f8f537988055503da2ce0a0aff9cc601f9b4 100644
+index 9780cf2901dab372b703448bb8bd6813561204ec..db97fcdf9c6abf80da37d48649c62a644be6e113 100644
 --- a/dist/index.mjs
 +++ b/dist/index.mjs
-@@ -20,8 +20,8 @@ const VIRTUAL_ENTRY_ALIAS = [
+@@ -20,15 +20,15 @@ const VIRTUAL_ENTRY_ALIAS = [
    /^(?:virtual:)?uno(?::(.+))?\.css(\?.*)?$/
  ];
  const LAYER_MARK_ALL = "__ALL__";
 -const RESOLVED_ID_WITH_QUERY_RE = /[\/\\]__uno(?:(_.*?))?\.css(\?.*)?$/;
 -const RESOLVED_ID_RE = /[\/\\]__uno(?:(_.*?))?\.css$/;
-+const RESOLVED_ID_WITH_QUERY_RE = /__uno(?:(_.*?))?\.css(\?.*)?$/;
-+const RESOLVED_ID_RE = /__uno(?:(_.*?))?\.css$/;
++const RESOLVED_ID_WITH_QUERY_RE = /[\/\\]?__uno(?:(_.*?))?\.css(\?.*)?$/;
++const RESOLVED_ID_RE = /[\/\\]?__uno(?:(_.*?))?\.css$/;
  function resolveId(id) {
    if (id.match(RESOLVED_ID_WITH_QUERY_RE))
      return id;
+   for (const alias of VIRTUAL_ENTRY_ALIAS) {
+     const match = id.match(alias);
+     if (match) {
+-      return match[1] ? `/__uno_${match[1]}.css` : "/__uno.css";
++      return match[1] ? `__uno_${match[1]}.css` : "__uno.css";
+     }
+   }
+ }

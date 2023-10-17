@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@unocss/vite@0.56.5':
-    hash: iuqwvfizpworfgjp65y55hnia4
+    hash: pdd5blcv3ygj5v4lgudk3pp5rm
     path: patches/@unocss__vite@0.56.5.patch
 
 dependencies:
@@ -93,6 +93,9 @@ devDependencies:
   '@uni-helper/uni-env':
     specifier: ^0.1.1
     version: 0.1.1(typescript@5.2.2)(vitest@0.34.6)
+  '@uni-helper/unocss-uni':
+    specifier: ^0.1.2
+    version: 0.1.2(postcss@8.4.27)(typescript@5.2.2)(vite@4.4.11)(vitest@0.34.6)
   '@uni-helper/vite-plugin-uni-components':
     specifier: ^0.0.8
     version: 0.0.8
@@ -3689,6 +3692,27 @@ packages:
       - vitest
     dev: true
 
+  /@uni-helper/unocss-uni@0.1.2(postcss@8.4.27)(typescript@5.2.2)(vite@4.4.11)(vitest@0.34.6):
+    resolution: {integrity: sha512-nD+fl53TUCMITVUy/qZqd8QMOOJjOyCXZ/NwccjyMcmcDWUo9jQMREL5jU3OLAqoSvWq+mflfaFED/mqXjYrVQ==}
+    dependencies:
+      '@uni-helper/uni-env': 0.1.1(typescript@5.2.2)(vitest@0.34.6)
+      '@unocss/core': 0.56.5
+      '@unocss/preset-mini': 0.56.5
+      '@unocss/rule-utils': 0.56.5
+      unocss: 0.56.5(postcss@8.4.27)(vite@4.4.11)
+      unocss-applet: 0.5.5
+    transitivePeerDependencies:
+      - '@unocss/webpack'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+      - vitest
+    dev: true
+
   /@uni-helper/vite-plugin-uni-components@0.0.8:
     resolution: {integrity: sha512-8TkL7PeHlbXcGK3urL3SkfSgontrihgLsJaveQ4p0Gy4sPz/7cXpBJX+zkBIGS/vODHjJhCvXP2NyBcmUvtEdQ==}
     dependencies:
@@ -3791,7 +3815,7 @@ packages:
     dependencies:
       '@unocss/core': 0.56.5
       '@unocss/reset': 0.56.5
-      '@unocss/vite': 0.56.5(patch_hash=iuqwvfizpworfgjp65y55hnia4)(vite@4.4.11)
+      '@unocss/vite': 0.56.5(patch_hash=pdd5blcv3ygj5v4lgudk3pp5rm)(vite@4.4.11)
       vite: 4.4.11(@types/node@20.8.6)(terser@5.16.3)
     transitivePeerDependencies:
       - rollup
@@ -4026,7 +4050,7 @@ packages:
       '@unocss/core': 0.56.5
     dev: true
 
-  /@unocss/vite@0.56.5(patch_hash=iuqwvfizpworfgjp65y55hnia4)(vite@4.4.11):
+  /@unocss/vite@0.56.5(patch_hash=pdd5blcv3ygj5v4lgudk3pp5rm)(vite@4.4.11):
     resolution: {integrity: sha512-X4nvIukXTH//d+Oc97nJogK04sVGw4fc5LhVV1DjHQVmAOAmhTJCG6SxWGoSeqqUMx5X3gI9fVILK+5O8yl5EA==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0
@@ -9470,7 +9494,7 @@ packages:
       '@unocss/transformer-compile-class': 0.56.5
       '@unocss/transformer-directives': 0.56.5
       '@unocss/transformer-variant-group': 0.56.5
-      '@unocss/vite': 0.56.5(patch_hash=iuqwvfizpworfgjp65y55hnia4)(vite@4.4.11)
+      '@unocss/vite': 0.56.5(patch_hash=pdd5blcv3ygj5v4lgudk3pp5rm)(vite@4.4.11)
       vite: 4.4.11(@types/node@20.8.6)(terser@5.16.3)
     transitivePeerDependencies:
       - postcss
