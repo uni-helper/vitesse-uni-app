@@ -94,8 +94,8 @@ devDependencies:
     specifier: ^0.1.1
     version: 0.1.1(typescript@5.2.2)(vitest@0.34.6)
   '@uni-helper/unocss-uni':
-    specifier: ^0.1.2
-    version: 0.1.2(postcss@8.4.27)(typescript@5.2.2)(vite@4.4.11)(vitest@0.34.6)
+    specifier: ^0.1.3
+    version: 0.1.3(postcss@8.4.27)(typescript@5.2.2)(vite@4.4.11)(vitest@0.34.6)
   '@uni-helper/vite-plugin-uni-components':
     specifier: ^0.0.8
     version: 0.0.8
@@ -3692,8 +3692,8 @@ packages:
       - vitest
     dev: true
 
-  /@uni-helper/unocss-uni@0.1.2(postcss@8.4.27)(typescript@5.2.2)(vite@4.4.11)(vitest@0.34.6):
-    resolution: {integrity: sha512-nD+fl53TUCMITVUy/qZqd8QMOOJjOyCXZ/NwccjyMcmcDWUo9jQMREL5jU3OLAqoSvWq+mflfaFED/mqXjYrVQ==}
+  /@uni-helper/unocss-uni@0.1.3(postcss@8.4.27)(typescript@5.2.2)(vite@4.4.11)(vitest@0.34.6):
+    resolution: {integrity: sha512-ZSoYSPrOnZ9ybJI/8Z3rVC0Vs2XRQ4QpbsYJ0/BE0zA3utym4urVgR3vZ9H5+NVkg7NiokY1p19jH13isw39cw==}
     dependencies:
       '@uni-helper/uni-env': 0.1.1(typescript@5.2.2)(vitest@0.34.6)
       '@unocss/core': 0.56.5
