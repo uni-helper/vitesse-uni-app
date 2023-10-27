@@ -98,8 +98,8 @@ devDependencies:
     specifier: ^0.1.6
     version: 0.1.6
   '@uni-helper/vite-plugin-uni-manifest':
-    specifier: ^0.2.2
-    version: 0.2.2
+    specifier: ^0.2.3
+    version: 0.2.3
   '@uni-helper/vite-plugin-uni-pages':
     specifier: ^0.2.12
     version: 0.2.12(@types/lodash-es@4.17.10)(lodash-es@4.17.21)(lodash@4.17.21)
@@ -3673,8 +3673,8 @@ packages:
       - rollup
     dev: true
 
-  /@uni-helper/vite-plugin-uni-manifest@0.2.2:
-    resolution: {integrity: sha512-DYbMBkkiU6pHngjvzx09IE9QnbYwZxtJ5pSWlXBUIfh+n29ftHNX7jF/JEDIWp4dOCrvrOCTHf8Is0C02EeVLg==}
+  /@uni-helper/vite-plugin-uni-manifest@0.2.3:
+    resolution: {integrity: sha512-cWwefP9mWCrxdHYnVndmYx++diium4jp1WLiBFTCULUFdBSnSWZCpQHITBQfuyGohdSUBSUx9Fe72Av1qOh+Ag==}
     dependencies:
       c12: 1.5.1
       type-fest: 4.6.0
