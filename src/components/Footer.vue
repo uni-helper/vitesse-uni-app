@@ -14,9 +14,9 @@ function handleClickGithub() {
 
 <template>
   <view text="xl gray4" m-5 flex items-center justify-center gap-3>
-    <navigator url="/pages/index" open-type="redirect">
+    <Navigator url="/pages/index" open-type="redirect">
       <view i-carbon-campsite />
-    </navigator>
+    </Navigator>
 
     <view cursor-pointer @click="handleClickGithub">
       <view i-carbon:logo-github />
