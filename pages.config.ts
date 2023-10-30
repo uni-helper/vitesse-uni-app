@@ -9,7 +9,7 @@ export default defineUniPages({
     backgroundTextStyle: '@bgTxtStyle',
     navigationBarBackgroundColor: '#000000',
     navigationBarTextStyle: '@navTxtStyle',
-    navigationBarTitleText: 'Vitess-Uni',
+    navigationBarTitleText: 'Vitesse-Uni',
     navigationStyle: 'custom',
   },
   // tabBar: {
