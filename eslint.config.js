@@ -3,7 +3,10 @@ const unocss = require('@unocss/eslint-plugin')
 
 module.exports = antfu(
   {
-    ignores: ['src/manifest.json', 'src/pages.json'],
+    ignores: ['**/manifest.json', '**/pages.json'],
+  },
+  {
+    files: ['**/*.vue'],
     rules: {
       'vue/component-name-in-template-casing': [
         'error',
