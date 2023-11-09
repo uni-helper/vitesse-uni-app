@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "uni:h5",
+      "type": "npm",
+      "script": "dev --devtools",
+      "isBackground": true,
+      "problemMatcher": "$vite",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
