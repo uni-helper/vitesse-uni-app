@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <Logos />
-  <InputEntry />
+  <app-logos />
+  <input-entry />
 </template>
 
 <style></style>
