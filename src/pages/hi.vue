@@ -5,7 +5,7 @@ const { value: name } = useQuery('name')
 <template>
   <view>{{ name }}</view>
 
-  <hi-counter />
+  <HiCounter />
 </template>
 
 <route lang="json">
