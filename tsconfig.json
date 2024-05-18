@@ -13,6 +13,7 @@
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "vueCompilerOptions": {
     "experimentalRuntimeMode": "runtime-uni-app",
-    "nativeTags": ["block", "component", "template", "slot"]
+    "nativeTags": ["block", "component", "template", "slot"],
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   }
 }
