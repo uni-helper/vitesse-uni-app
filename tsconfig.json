@@ -1,18 +1,41 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "ignoreDeprecations": "5.0",
-    "lib": ["esnext", "dom"],
-    "baseUrl": ".",
+    "target": "ESNext",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["@dcloudio/types", "@uni-helper/uni-app-types"],
-    "sourceMap": true
+    "resolveJsonModule": true,
+    "types": [
+      // uni-app + Vue 3 使用 Vite 构建，需要安装 vite
+      "vite/client",
+      // uni API 相关的 TypeScript 类型
+      "@dcloudio/types",
+      // 为 uni-app 组件、uni-cloud 组件和 uni-ui 组件提供 TypeScript 类型
+      "@uni-helper/uni-types"
+    ],
+    "strict": true,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.jsx",
+    "src/**/*.vue"
+  ],
   "vueCompilerOptions": {
-    "experimentalRuntimeMode": "runtime-uni-app",
-    "nativeTags": ["block", "component", "template", "slot"]
+    "plugins": ["@uni-helper/uni-types/volar-plugin"]
   }
 }
