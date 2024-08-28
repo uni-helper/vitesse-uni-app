@@ -11,61 +11,74 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: pnpm
+    strategy:
+      matrix:
+        node_version: [18.x, 20.x, 22.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
 
-      - name: Install
-        run: pnpm i
-
-      - name: Lint
-        run: pnpm run lint
-
-  typecheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: pnpm
-
-      - name: Install
-        run: pnpm i
-
-      - name: TypeCheck
-        run: pnpm run type-check
-
-  build:
     runs-on: ${{ matrix.os }}
 
     timeout-minutes: 10
 
-    strategy:
-      matrix:
-        node_version: [18.x]
-        os: [ubuntu-latest, windows-latest]
-        build_cmd: [build, 'build:mp-weixin', 'build:app']
-      fail-fast: false
-
     steps:
+      - run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-
-      - name: Set node version to ${{ matrix.node_version }}
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
+      - run: pnpm i
+      - run: pnpm run lint
 
-      - name: Install
-        run: pnpm i
+  typecheck:
+    strategy:
+      matrix:
+        node_version: [18.x, 20.x, 22.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
 
-      - name: Build
-        run: pnpm run ${{ matrix.build_cmd }}
+    runs-on: ${{ matrix.os }}
+
+    timeout-minutes: 10
+
+    steps:
+      - run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: pnpm
+      - run: pnpm i
+      - run: pnpm run type-check
+
+  build:
+    strategy:
+      matrix:
+        node_version: [18.x, 20.x, 22.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        build_cmd: [build, 'build:mp-weixin', 'build:app']
+      fail-fast: false
+
+    runs-on: ${{ matrix.os }}
+
+    timeout-minutes: 10
+
+    steps:
+      - run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: pnpm
+      - run: pnpm i
+      - run: pnpm run ${{ matrix.build_cmd }}
