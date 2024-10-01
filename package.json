@@ -87,7 +87,7 @@
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^9.9.1",
     "lint-staged": "^15.2.9",
-    "miniprogram-api-typings": "^3.12.3",
+    "miniprogram-api-typings": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "~5.5.4",
     "unocss": "^0.62.3",

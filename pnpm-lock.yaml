@@ -130,8 +130,8 @@ importers:
         specifier: ^15.2.9
         version: 15.2.9
       miniprogram-api-typings:
-        specifier: ^3.12.3
-        version: 3.12.3
+        specifier: ^4.0.0
+        version: 4.0.1
       simple-git-hooks:
         specifier: ^2.11.1
         version: 2.11.1
@@ -4105,8 +4105,8 @@ packages:
     resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
     engines: {node: '>=8'}
 
-  miniprogram-api-typings@3.12.3:
-    resolution: {integrity: sha512-o7bOfrU28MEMCBWo83nXv0ROQSBFxJcfCl4f2wTYqah64ipC5RGqLJfvWJTWhlQt2ECVwspSzM8LgvnfMo7TEQ==}
+  miniprogram-api-typings@4.0.1:
+    resolution: {integrity: sha512-Ok4SSNCYnNLgbAhHCpIeqx6XICZ3aUxZ2iQDExmwKEinWaQQFzzxobK5JP9skrEOWn9PoKodjw4iUdF8Um0i/A==}
 
   minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
@@ -10623,7 +10623,7 @@ snapshots:
 
   minipass@5.0.0: {}
 
-  miniprogram-api-typings@3.12.3: {}
+  miniprogram-api-typings@4.0.1: {}
 
   minizlib@2.1.2:
     dependencies:
