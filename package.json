@@ -72,7 +72,7 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-4020420240722002",
     "@iconify-json/carbon": "^1.1.37",
     "@mini-types/alipay": "^3.0.14",
-    "@types/node": "^20.16.2",
+    "@types/node": "^22.0.0",
     "@uni-helper/eslint-config": "^0.1.0",
     "@uni-helper/uni-env": "^0.1.4",
     "@uni-helper/uni-types": "^1.0.0-alpha.3",
