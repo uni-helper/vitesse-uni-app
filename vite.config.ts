@@ -25,7 +25,7 @@ export default async () => {
         dts: 'src/components.d.ts',
         directoryAsNamespace: true,
       }),
-      Uni(),
+      (Uni as any)!.default(),
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
         imports: ['vue', '@vueuse/core', 'uni-app'],
