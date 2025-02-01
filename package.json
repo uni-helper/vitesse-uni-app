@@ -60,7 +60,7 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4040520250104002",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4040520250104002",
     "@vueuse/core": "^12.4.0",
-    "vue": "~3.4.38",
+    "vue": "~3.5.0",
     "vue-i18n": "^9.14.2"
   },
   "devDependencies": {
