@@ -14,6 +14,8 @@ Vitesse for uni-app
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
 
+- 🔧 [ESM 优先](https://github.com/uni-helper/plugin-uni)
+
 - 🗂 [基于文件的路由](./src/pages)
 
 - 📦 [组件自动化加载](./src/components)
