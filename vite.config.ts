@@ -11,20 +11,20 @@ import UniPolyfill from 'vite-plugin-uni-polyfill'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    // https://github.com/uni-helper/vite-plugin-uni-manifest
+    // https://uni-helper.js.org/vite-plugin-uni-manifest
     UniHelperManifest(),
-    // https://github.com/uni-helper/vite-plugin-uni-pages
+    // https://uni-helper.js.org/vite-plugin-uni-pages
     UniHelperPages({
       dts: 'src/uni-pages.d.ts',
     }),
-    // https://github.com/uni-helper/vite-plugin-uni-layouts
+    // https://uni-helper.js.org/vite-plugin-uni-layouts
     UniHelperLayouts(),
-    // https://github.com/uni-helper/vite-plugin-uni-components
+    // https://uni-helper.js.org/vite-plugin-uni-components
     UniHelperComponents({
       dts: 'src/components.d.ts',
       directoryAsNamespace: true,
     }),
-    // https://github.com/uni-helper/plugin-uni
+    // https://uni-helper.js.org/plugin-uni
     Uni(),
     UniPolyfill(),
     // https://github.com/antfu/unplugin-auto-import
