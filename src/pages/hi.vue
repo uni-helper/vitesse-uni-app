@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+definePage({
+  layout: 'home',
+})
+
 const { value: name } = useQuery('name')
 </script>
 
@@ -7,9 +11,3 @@ const { value: name } = useQuery('name')
 
   <HiCounter />
 </template>
-
-<route lang="json">
-{
-  "layout": "home"
-}
-</route>

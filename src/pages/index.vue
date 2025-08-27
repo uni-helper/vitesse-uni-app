@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePage({
+  type: 'home',
+})
+</script>
 
 <template>
   <AppLogos />
@@ -6,7 +10,3 @@
 </template>
 
 <style></style>
-
-<route type="home" lang="json">
-{}
-</route>
