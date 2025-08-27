@@ -118,11 +118,11 @@ importers:
         specifier: ^0.2.8
         version: 0.2.8(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))
       '@uni-helper/vite-plugin-uni-pages':
-        specifier: ^0.3.6
-        version: 0.3.6(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))
+        specifier: ^0.3.8
+        version: 0.3.8(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))
       '@uni-helper/volar-service-uni-pages':
-        specifier: ^0.3.6
-        version: 0.3.6
+        specifier: ^0.3.8
+        version: 0.3.8
       '@unocss/eslint-config':
         specifier: ^66.3.3
         version: 66.3.3(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3)
@@ -350,11 +350,6 @@ packages:
 
   '@babel/parser@7.27.3':
     resolution: {integrity: sha512-xyYxRj6+tLNDTWi0KCBcZ9V7yg3/lwL9DWh9Uwh/RIVlIfFidggcgxKX3GCXwCiswwcGRawBKbEg2LG/Y8eJhw==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-
-  '@babel/parser@7.28.0':
-    resolution: {integrity: sha512-jVZGvOxOuNSsuQuLRTh13nU0AogFlw32w/MT+LV6D3sP5WdbW61E77RnkbaO2dUvmPAYrBDJXGn5gGS6tH4j8g==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1536,9 +1531,6 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@jridgewell/sourcemap-codec@1.5.4':
-    resolution: {integrity: sha512-VT2+G1VQs/9oz078bLrYbecdZKs912zQlkelYpuf+SXF+QvZDYJlbx/LSx+meSAwdDFnF8FVXW92AVjjkVmgFw==}
-
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
@@ -1894,8 +1886,8 @@ packages:
       '@antfu/eslint-config': ^4.0.1
       eslint: ^9.10.0
 
-  '@uni-helper/pages-json-schema@0.3.6':
-    resolution: {integrity: sha512-/hJldNQh1CzDXTLikUcxUI54VI5VMsmFBkKsLWqgZVitpMrbtJCYNpPVZVF+YNu9NhBR6QlQlFKX+hRlvgpnhg==}
+  '@uni-helper/pages-json-schema@0.3.8':
+    resolution: {integrity: sha512-EVjw+Kz0ZGL1bk0wY9OVaxKS9IG+hxC2DyfzBVvkuNjdhbHRtHBqm2TSbg518XCdiWVfOq6zX60o0DbLusxwTw==}
 
   '@uni-helper/plugin-uni@0.1.0':
     resolution: {integrity: sha512-hBPUjoQc/SgqKsyGUl0fJiL+dDwLPhf2es1PJdsXcxHyOujoBP2+D4z5ie+Q72wVwKtTsQSP3tSjww/63JRmbA==}
@@ -1963,13 +1955,13 @@ packages:
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0 || ^6.0.0
 
-  '@uni-helper/vite-plugin-uni-pages@0.3.6':
-    resolution: {integrity: sha512-O3DIKUZ4LjCU//+ePOujw86w4twVGzeMCXB1oGFdM2ZVgvtWKLzsw+1rXqs0m+mkU5wWnY/uKk9gqdJl+B7fhg==}
+  '@uni-helper/vite-plugin-uni-pages@0.3.8':
+    resolution: {integrity: sha512-Bm26+k7U8OEyQHZseZ5464H5WIPL3FxQhCC4T50rC2dJsD7IN9YybJo1yFrjiK6DgJWjkxiEXeOYhloOGaviBw==}
     peerDependencies:
       vite: ^5.0.0
 
-  '@uni-helper/volar-service-uni-pages@0.3.6':
-    resolution: {integrity: sha512-ItC6GakPR8sKJY9b4rs+SX1Ix1ga6kzXHX4bpLfWmDHmQlRx1HozNwzGreubVzRLydx/SOkFQBcssfxyf/GskQ==}
+  '@uni-helper/volar-service-uni-pages@0.3.8':
+    resolution: {integrity: sha512-95p9RBBgxutOrIvkA7uHX04X7oEQ9Iye3Do3F0Nr3V3uGfOm8VgBowGN7CzbNFSNC0V54fuJMCoo3B0aOcoqgg==}
     peerDependencies:
       '@volar/language-service': ^1.11.1
     peerDependenciesMeta:
@@ -6057,10 +6049,6 @@ snapshots:
     dependencies:
       '@babel/types': 7.27.3
 
-  '@babel/parser@7.28.0':
-    dependencies:
-      '@babel/types': 7.28.2
-
   '@babel/parser@7.28.3':
     dependencies:
       '@babel/types': 7.28.2
@@ -8103,7 +8091,7 @@ snapshots:
 
   '@jridgewell/gen-mapping@0.3.12':
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.4
+      '@jridgewell/sourcemap-codec': 1.5.5
       '@jridgewell/trace-mapping': 0.3.29
 
   '@jridgewell/gen-mapping@0.3.8':
@@ -8123,8 +8111,6 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@jridgewell/sourcemap-codec@1.5.4': {}
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@jridgewell/trace-mapping@0.3.25':
@@ -8135,7 +8121,7 @@ snapshots:
   '@jridgewell/trace-mapping@0.3.29':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.4
+      '@jridgewell/sourcemap-codec': 1.5.5
 
   '@mini-types/alipay@3.0.14':
     dependencies:
@@ -8508,7 +8494,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@uni-helper/pages-json-schema@0.3.6': {}
+  '@uni-helper/pages-json-schema@0.3.8': {}
 
   '@uni-helper/plugin-uni@0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.12(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))(vue@3.4.12(typescript@5.8.3)))':
     dependencies:
@@ -8592,7 +8578,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@uni-helper/vite-plugin-uni-pages@0.3.6(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))':
+  '@uni-helper/vite-plugin-uni-pages@0.3.8(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))':
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/types': 7.28.2
@@ -8608,17 +8594,17 @@ snapshots:
       json5: 2.2.3
       kolorist: 1.8.0
       lodash.groupby: 4.6.0
-      magic-string: 0.30.17
+      magic-string: 0.30.18
       typescript: 5.9.2
       unconfig: 7.3.2
       vite: 5.2.8(@types/node@24.1.0)(terser@5.37.0)
-      yaml: 2.8.0
+      yaml: 2.8.1
     transitivePeerDependencies:
       - supports-color
 
-  '@uni-helper/volar-service-uni-pages@0.3.6':
+  '@uni-helper/volar-service-uni-pages@0.3.8':
     dependencies:
-      '@uni-helper/pages-json-schema': 0.3.6
+      '@uni-helper/pages-json-schema': 0.3.8
       vscode-json-languageservice: 5.4.2
       vscode-languageserver-textdocument: 1.0.12
       yaml-language-server: 1.15.0
@@ -9297,7 +9283,7 @@ snapshots:
 
   ast-kit@2.1.2:
     dependencies:
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       pathe: 2.0.3
 
   asynckit@0.4.0: {}
