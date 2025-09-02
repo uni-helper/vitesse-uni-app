@@ -19,3 +19,6 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+manifest.json
+pages.json
