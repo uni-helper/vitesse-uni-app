@@ -33,7 +33,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-4070520250711001",
     "@vueuse/core": "^13.5.0",
     "vue": "3.4.21",
-    "vue-i18n": "^9.14.5"
+    "vue-i18n": "^11.0.0"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.16",
