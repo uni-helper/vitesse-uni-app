@@ -7,7 +7,7 @@ Vitesse for uni-app
 </h2>
 <p align="center">
   <a href="https://vitesse-uni-app.netlify.app/">📱 在线预览</a>
-  <a href="https://vitesse-docs.netlify.app/">📖 阅读文档</a>
+  <a href="https://uni-helper.js.org/vitesse-uni-app">📖 阅读文档</a>
 </p>
 
 ## 特性
