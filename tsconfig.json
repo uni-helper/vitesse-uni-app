@@ -18,11 +18,5 @@
   "vueCompilerOptions": {
     // 调整 Volar（Vue 语言服务工具）解析行为，用于为 uni-app 组件提供 TypeScript 类型
     "plugins": ["@uni-helper/uni-types/volar-plugin"]
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
-  ]
+  }
 }
