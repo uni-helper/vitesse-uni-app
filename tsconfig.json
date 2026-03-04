@@ -11,7 +11,8 @@
       "@mini-types/alipay",
       "miniprogram-api-typings",
       "@uni-helper/uni-types",
-      "@uni-helper/vite-plugin-uni-pages"
+      "@uni-helper/vite-plugin-uni-pages",
+      "vitest-environment-uniapp/types"
     ],
     "sourceMap": true
   },
