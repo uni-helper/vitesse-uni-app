@@ -14,8 +14,4 @@ export default defineConfig({
       'mp-weixin': 'wx',
     },
   },
-  autoGenerate: {
-    pages: true,
-    manifest: true,
-  },
 })
