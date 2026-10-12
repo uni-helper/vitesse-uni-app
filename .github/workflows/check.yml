@@ -13,7 +13,7 @@ jobs:
   lint:
     strategy:
       matrix:
-        node_version: [18.x, 20.x, 22.x]
+        node_version: [22.x, 24.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
       fail-fast: false
 
@@ -37,7 +37,7 @@ jobs:
   typecheck:
     strategy:
       matrix:
-        node_version: [18.x, 20.x, 22.x]
+        node_version: [22.x, 24.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
       fail-fast: false
 
@@ -61,7 +61,7 @@ jobs:
   build:
     strategy:
       matrix:
-        node_version: [18.x, 20.x, 22.x]
+        node_version: [22.x, 24.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
         build_cmd: [build, build wx, build app]
       fail-fast: false
