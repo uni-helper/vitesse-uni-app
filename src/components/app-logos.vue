@@ -5,7 +5,7 @@
       hover-class="drop-shadow-md drop-shadow-color-green5"
     >
       <image class="inline-block h-18 w-18" src="/static/logo.svg" />
-      <text class="text-green5 -mt-2">
+      <text class="uni-helper-logo__label text-green5 -mt-2">
         uni-helper
       </text>
     </view>

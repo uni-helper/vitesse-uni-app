@@ -12,7 +12,8 @@
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks",
+    "test": "vitest"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-5030420261029002",
@@ -71,6 +72,8 @@
     "unocss": "~66.12.0",
     "vite": "^5.4.21",
     "vite-plugin-uni-polyfill": "^0.1.0",
+    "vitest": "~4.0.18",
+    "vitest-environment-uniapp": "^0.0.5",
     "vue-tsc": "^3.3.14"
   },
   "simple-git-hooks": {

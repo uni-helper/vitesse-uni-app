@@ -12,7 +12,8 @@
       "miniprogram-api-typings",
       "@uni-helper/uni-types",
       "@uni-helper/vite-plugin-uni-pages/client",
-      "@uni-helper/vite-plugin-uni-middleware/client"
+      "@uni-helper/vite-plugin-uni-middleware/client",
+      "vitest-environment-uniapp/types"
     ],
     "sourceMap": true
   }
