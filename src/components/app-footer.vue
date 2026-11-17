@@ -13,13 +13,13 @@ function handleClickGithub() {
 </script>
 
 <template>
-  <view text="xl gray4" m-5 flex items-center justify-center gap-3>
+  <view class="m-5 flex items-center justify-center gap-3 text-xl text-gray4">
     <navigator url="/pages/index" open-type="redirect">
-      <view i-carbon-campsite />
+      <view class="i-carbon-campsite" />
     </navigator>
 
-    <view cursor-pointer @click="handleClickGithub">
-      <view i-carbon:logo-github />
+    <view class="cursor-pointer" @click="handleClickGithub">
+      <view class="i-carbon:logo-github" />
     </view>
   </view>
 </template>

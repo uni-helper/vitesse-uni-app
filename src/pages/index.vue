@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AppLogos from '@/components/AppLogos.vue'
-import InputEntry from '@/components/InputEntry.vue'
+import AppLogos from '@/components/app-logos.vue'
+import InputEntry from '@/components/input-entry.vue'
 import { greeting } from '@/platform/greeting'
 
 // definePage 的写法两种都行：直接传对象，或者传函数按平台合并配置。
@@ -37,5 +37,3 @@ definePage(({ define }) =>
     平台修饰符
   </view>
 </template>
-
-<style></style>

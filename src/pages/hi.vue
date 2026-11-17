@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useQuery } from '@uni-helper/uni-use'
 import { useUhUniLayoutRef } from 'virtual:uni-layouts'
-import HiCounter from '@/components/HiCounter.vue'
+import HiCounter from '@/components/hi-counter.vue'
 import { visitedRoute } from '@/middleware/track'
 
 definePage({

@@ -5,15 +5,15 @@ const { count, inc, dec } = useCount()
 </script>
 
 <template>
-  <view inline-flex m="y-3">
+  <view class="my-3 inline-flex">
     <view class="btn" @click="dec()">
-      <text i-carbon-subtract />
+      <text class="i-carbon-subtract" />
     </view>
-    <view font="mono" w="15" m-auto inline-block>
+    <view class="m-auto inline-block w-15 font-mono">
       {{ count }}
     </view>
     <view class="btn" @click="inc()">
-      <text i-carbon-add />
+      <text class="i-carbon-add" />
     </view>
   </view>
 </template>
