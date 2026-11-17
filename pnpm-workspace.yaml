@@ -1,0 +1,24 @@
+minimumReleaseAgeExcludePrune: true
+minimumReleaseAgeExclude:
+  - '@uni-helper/unh@0.5.1'
+  - '@uni-helper/unocss-preset-uni@0.7.0'
+  - '@uni-helper/vite-plugin-uni-middleware@0.1.2'
+  - '@uni-helper/vite-plugin-uni-platform@0.2.2'
+  - '@unocss-applet/preset-applet@0.16.2'
+  - '@unocss-applet/preset-rem-rpx@0.16.2'
+  - '@unocss-applet/transformer-attributify@0.16.2'
+  - '@unocss-applet/transformer-hover@0.16.2'
+  - unocss-applet@0.16.2
+
+trustPolicy: off
+shellEmulator: true
+verifyDepsBeforeRun: false
+
+configDependencies:
+  '@pnpm/plugin-trusted-deps': ^0.2.2
+
+allowBuilds:
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+  simple-git-hooks: true

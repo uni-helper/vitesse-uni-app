@@ -1,6 +1,8 @@
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
+  // 全局中间件，每个页面都会跑；页面级的写在页面 definePage 里
+  middleware: ['track'],
   pages: [],
   globalStyle: {
     backgroundColor: '@bgColor',

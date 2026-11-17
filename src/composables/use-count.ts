@@ -1,3 +1,5 @@
+import { ref } from 'vue'
+
 export function useCount() {
   const count = ref(Math.round(Math.random() * 20))
 

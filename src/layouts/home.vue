@@ -1,3 +1,15 @@
+<script setup lang="ts">
+function toast(message: string) {
+  uni.showToast({
+    icon: 'none',
+    title: message,
+  })
+}
+
+// 页面用 useUhUniLayoutRef 就能拿到这里暴露的方法
+defineExpose({ toast })
+</script>
+
 <template>
   <view class="px-10 py-20 text-center">
     <slot />
