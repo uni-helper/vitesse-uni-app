@@ -7,4 +7,6 @@ export default uni({
   rules: {
     'pnpm/yaml-enforce-settings': 'off',
   },
+}, {
+  ignores: ['**/uni-layouts.d.ts', '**/uni-pages.d.ts'],
 })
