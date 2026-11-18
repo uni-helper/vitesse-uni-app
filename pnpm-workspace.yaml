@@ -1,12 +1,9 @@
 minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
   - '@uni-helper/unh@0.5.2'
-  - '@uni-helper/unocss-preset-uni@0.7.0'
-  - '@unocss-applet/preset-applet@0.16.2'
-  - '@unocss-applet/preset-rem-rpx@0.16.2'
-  - '@unocss-applet/transformer-attributify@0.16.2'
-  - '@unocss-applet/transformer-hover@0.16.2'
-  - unocss-applet@0.16.2
+  - '@uni-helper/uni-pages-types@0.6.3'
+  - '@uni-helper/vite-plugin-uni-layouts@0.3.1'
+  - '@uni-helper/vite-plugin-uni-pages@0.6.3'
 
 trustPolicy: off
 shellEmulator: true
