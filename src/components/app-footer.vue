@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 function handleClickGithub() {
-  if (window?.open) {
+  // 小程序和 App 没有 window，只能走 toast 提示
+  if (typeof window !== 'undefined' && window.open) {
     window.open('https://github.com/uni-helper/vitesse-uni-app')
   }
   else {

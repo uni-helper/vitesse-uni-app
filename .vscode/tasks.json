@@ -4,7 +4,7 @@
     {
       "label": "uni:h5",
       "type": "npm",
-      "script": "dev --devtools",
+      "script": "dev",
       "isBackground": true,
       "problemMatcher": "$vite",
       "group": {
