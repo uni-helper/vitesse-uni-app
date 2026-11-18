@@ -289,8 +289,8 @@ importers:
         specifier: ^0.1.2
         version: 0.1.2(@dcloudio/vite-plugin-uni@3.0.0-5030420261029002(@vueuse/core@12.8.2(typescript@6.0.3))(postcss@8.5.32)(rollup@4.68.3)(supports-color@8.1.1)(vite@5.4.21(@types/node@26.6.6)(terser@5.51.2))(vue@3.4.38(typescript@6.0.3)))
       '@uni-helper/unh':
-        specifier: ^0.5.1
-        version: 0.5.1(supports-color@8.1.1)
+        specifier: ^0.5.2
+        version: 0.5.2(supports-color@8.1.1)
       '@uni-helper/uni-types':
         specifier: ^1.5.0
         version: 1.5.0(@uni-helper/uni-app-types@1.5.0(typescript@6.0.3)(vue@3.4.38(typescript@6.0.3)))(@uni-helper/uni-cloud-types@1.4.2(typescript@6.0.3)(vue@3.4.38(typescript@6.0.3)))(@uni-helper/uni-ui-types@1.5.0(@uni-helper/uni-app-types@1.5.0(typescript@6.0.3)(vue@3.4.38(typescript@6.0.3)))(typescript@6.0.3)(vue@3.4.38(typescript@6.0.3)))(typescript@6.0.3)(vue@3.4.38(typescript@6.0.3))
@@ -2842,8 +2842,8 @@ packages:
     peerDependencies:
       '@dcloudio/vite-plugin-uni': '*'
 
-  '@uni-helper/unh@0.5.1':
-    resolution: {integrity: sha512-vL9G/81bkYKL6Jq5E7chxln5agDZ0aXa8T/nE0O6Lvx+JzleBa4Jtsh0UvbKKPUY2EOQH04VPd5O+ZYFbCkS0A==}
+  '@uni-helper/unh@0.5.2':
+    resolution: {integrity: sha512-QO+cPhn3yJA4cCLu6KtWax2Mc4fT5oDHuPUxsLCf4v/eSS/G6IpYvbbjL9lKD9bEV8AYzY+j2VDoOJNR60T5Ww==}
     hasBin: true
 
   '@uni-helper/uni-app-types@1.5.0':
@@ -10004,7 +10004,7 @@ snapshots:
     dependencies:
       '@dcloudio/vite-plugin-uni': 3.0.0-5030420261029002(@vueuse/core@12.8.2(typescript@6.0.3))(postcss@8.5.32)(rollup@4.68.3)(supports-color@8.1.1)(vite@5.4.21(@types/node@26.6.6)(terser@5.51.2))(vue@3.4.38(typescript@6.0.3))
 
-  '@uni-helper/unh@0.5.1(supports-color@8.1.1)':
+  '@uni-helper/unh@0.5.2(supports-color@8.1.1)':
     dependencies:
       '@uni-helper/deploy': 0.1.0(supports-color@8.1.1)
       cac: 7.1.0

@@ -52,7 +52,7 @@
     "@types/node": "^26.6.6",
     "@uni-helper/eslint-config": "^0.8.0",
     "@uni-helper/plugin-uni": "^0.1.2",
-    "@uni-helper/unh": "^0.5.1",
+    "@uni-helper/unh": "^0.5.2",
     "@uni-helper/uni-types": "^1.5.0",
     "@uni-helper/unocss-preset-uni": "^0.7.0",
     "@uni-helper/vite-plugin-uni-layouts": "^0.3.0",
