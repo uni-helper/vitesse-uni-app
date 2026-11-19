@@ -31,3 +31,5 @@ Vitesse for uni-app
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) - 保证代码质量
+
+- 🧪 [Vitest](https://vitest.dev/) & [vitest-environment-uniapp](https://github.com/uni-helper/vitest-environment-uniapp) - 在微信开发者工具里跑小程序自动化测试
