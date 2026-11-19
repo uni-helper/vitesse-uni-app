@@ -32,4 +32,4 @@ Vitesse for uni-app
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) - 保证代码质量
 
-- 🧪 [Vitest](https://vitest.dev/) & [vitest-environment-uniapp](https://github.com/uni-helper/vitest-environment-uniapp) - 在微信开发者工具里跑小程序自动化测试
+- 🧪 [Vitest](https://vitest.dev/) & [vitest-environment-uniapp](https://github.com/uni-helper/vitest-environment-uniapp) - 在微信开发者工具里跑小程序自动化测试，跑前要在开发者工具的设置里打开服务端口
