@@ -18,7 +18,9 @@ Vitesse for uni-app
 
 - 🗂 [基于文件的路由](./src/pages)
 
-- 📦 [组件自动化加载](./src/components)
+- 🛡 [路由中间件](./src/middleware) - 跳转前的登录校验、权限判断和埋点
+
+- 🧩 [按平台开发](./src/platform) - 平台文件、平台修饰符、UnoCSS 平台变体
 
 - 📑 [布局系统](./src/layouts)
 
@@ -27,7 +29,5 @@ Vitesse for uni-app
 - 😃 [各种图标集为你所用](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-
-- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) - 保证代码质量
